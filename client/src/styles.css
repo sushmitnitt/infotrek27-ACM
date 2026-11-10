@@ -1,0 +1,33 @@
+:root{--ink:#12263a;--paper:#f3f6f1;--cobalt:#2447f9;--mint:#cfeadb;--line:#c9d4cc;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.55}
+.hero{padding:12vh 6vw 10vh;background:
+  repeating-radial-gradient(circle at 85% 10%,transparent 0 26px,rgba(36,71,249,.12) 26px 27px),var(--mint)}
+.where{margin:0 0 1rem;font-weight:600}
+.hero h1{font-size:clamp(3.2rem,12vw,9rem);line-height:.95;margin:0;font-weight:800;letter-spacing:-.04em}
+.sub{max-width:36rem;font-size:1.2rem;margin:1.5rem 0 2rem}
+.cta,button{display:inline-block;background:var(--cobalt);color:#fff;border:0;padding:.85rem 1.6rem;border-radius:6px;font:inherit;font-weight:600;text-decoration:none;cursor:pointer}
+button:disabled{opacity:.6;cursor:wait}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--ink);outline-offset:2px}
+.wrap{max-width:60rem;margin:0 auto;padding:4rem 6vw}
+.h2{font-size:2rem;margin:0 0 1.5rem;letter-spacing:-.02em}
+section+section{margin-top:4rem}
+.events{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:0;border-top:2px solid var(--ink)}
+.events li{padding:1.2rem 1rem 1.4rem 0;border-bottom:1px solid var(--line)}
+.events h3{margin:0 0 .3rem;font-size:1.25rem}.events p{margin:0}
+.form{display:grid;gap:1rem;max-width:34rem}
+.form.narrow{max-width:22rem}
+label{display:grid;gap:.3rem;font-weight:600}
+input,select{font:inherit;padding:.7rem;border:1px solid var(--ink);border-radius:6px;background:#fff}
+fieldset{border:1px solid var(--line);border-radius:6px;padding:1rem;display:grid;gap:.5rem}
+.check{display:flex;gap:.6rem;align-items:center;font-weight:400}
+.check input{width:1.1rem;height:1.1rem}
+.msg{margin:0;padding:.8rem 1rem;border-radius:6px}
+.msg.ok{background:var(--mint)}.msg.err{background:#fde2dc}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:42rem}
+th,td{text-align:left;padding:.6rem;border-bottom:1px solid var(--line);vertical-align:top}
+.link{background:none;color:var(--cobalt);padding:0;text-decoration:underline}
+footer{padding:2rem 6vw;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
